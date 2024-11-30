@@ -21,7 +21,7 @@
   
   @media (max-width: 395px) {
     .home {
-      padding: 2rem 2.5rem;
+      padding: 2rem 1.5rem;
     }
 
     .home p:nth-child(3) {
