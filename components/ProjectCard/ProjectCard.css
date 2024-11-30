@@ -13,11 +13,11 @@
     height: 250px;
     border-radius: 0.4rem;
     object-fit: cover;
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.25s ease-in-out;
   }
   
 .project-card > img.hovering {
-    opacity: 0.8;
+    opacity: 0.85;
     transform: scale(1.03); 
 }
 
