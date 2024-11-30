@@ -5,11 +5,11 @@ export const Footer = () => `
 
 <h2>Contact</h2>
 <div>
-${Button("../../public/icons/x.png", "X", "https://x.com")}
-${Button("../../public/icons/github.jpg", "GitHub", "https://github.com")}
-${Button("../../public/icons/linkedin.jpg", "LinkedIn", "https://linkedin.com")}
+${Button("/icons/x.png", "X", "https://x.com")}
+${Button("/icons/github.jpg", "GitHub", "https://github.com")}
+${Button("/icons/linkedin.jpg", "LinkedIn", "https://linkedin.com")}
 ${Button(
-  "../../public/icons/telegram.png",
+  "/icons/telegram.png",
   "Telegram",
   "https://web.telegram.org/"
 )}

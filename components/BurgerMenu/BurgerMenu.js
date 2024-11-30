@@ -7,5 +7,5 @@ export const BurgerMenu = () => `
      <span></span>
      <span></span>
    </div>
-  <img id="themeBtnB" src="../../public/icons/paint-bucket.png" alt="paint bucket icon">
+  <img id="themeBtnB" src="/icons/paint-bucket.png" alt="paint bucket icon">
 </div>`;

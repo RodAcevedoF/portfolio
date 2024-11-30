@@ -8,7 +8,7 @@ export const Gallery = (hobby) =>
 <a href="${hobby.url}" class="fade-p" target="_blank"
           rel="noopener noreferrer"><p>${hobby.text}</p></a>
 <div class="indiv">
-<img src="../../public/icons/share.png" alt="like icon">
+<img src="/icons/share.png" alt="like icon">
 <p>${hobby.likeNum}</p>
 </div>
 </div>`;

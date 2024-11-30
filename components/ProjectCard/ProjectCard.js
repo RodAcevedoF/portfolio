@@ -17,18 +17,18 @@ export const ProjectCard = (project) => `
     <div>
       <a href="${project.github}" target="_blank"
           rel="noopener noreferrer">
-        <img src="../../public/icons/github.jpg" alt="GitHub Icon" />
+        <img src="/icons/github.jpg" alt="GitHub Icon" />
       </a>
       <a href="${project.link}" target="_blank"
           rel="noopener noreferrer">
-        <img src="../../public/icons/link.jpg" alt="Link icon" />
+        <img src="/icons/link.jpg" alt="Link icon" />
       </a>
     </div>
   </div>
   <div class="detail">
     <p>${project.description}</p>
     <div class="div-tech">
-      ${techImg(project)} <!-- Aquí se inserta el HTML de las imágenes -->
+      ${techImg(project)}
     </div>
   </div>
 </div>

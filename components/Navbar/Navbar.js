@@ -65,7 +65,7 @@ ${BurgerMenu()}
         <a href="#" id="aboutlink">About</a>
     </li>
     <li>
-        <button id="themeBtn"><img src="/public/icons/paint-bucket.png"></button>
+        <button id="themeBtn"><img src="/icons/paint-bucket.png"></button>
     </li>
 </ul>
 <ul class="burger-ul">
