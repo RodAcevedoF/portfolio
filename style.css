@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-dark: whitesmoke;
+  --bg-dark: #111111;
+  --primary-light: #191262;
+  --bg-light: whitesmoke;
+  --primary-tloz: #eff3ec;
+  --btn-color:#1976D2;
+  --highlight: #a644ca;
+  --highlight-light: #32a4b0;
+  --highlight-light-tloz:  #d3ff7a;
+  --content-color-back: #563e96; 
+  --highlight-tloz: #4696d3;
+  --divider: rgb(47, 74, 182);
+  --card-trans-light: rgba(0, 0, 0, 0.06);
+  --card-trans: rgba(194, 103, 236, 0.286);
+  --card-trans-tloz:  #d5e8ad55;
+  --background-title: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
+  --background-title-tloz: linear-gradient(to right, #d3ff7a 0%, #d7d7d7 50%, #6e84ff 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--primary-dark);
+  transition: all 0.5s ease-in-out;
+}
+
+.light {
+  background-color: var(--bg-light);
+  color: var(--primary-light);
+  .divider {
+    border-color: var(--highlight-light);
+  }
+  .content-color {
+    background-color: var(--highlight-light);
+  }
+  .my-btn {
+    background-color: var(--btn-color);
+  }
+  .my-btn:hover {
+    box-shadow: inset 4rem 0 0 0 var(--highlight-light)
+  }
+  nav li a:hover {
+    color: var(--highlight-light);
+    border-bottom: 2px solid var(--highlight-light);
+  }
+  nav a:first-of-type:hover h4 {
+    color: var(--highlight-light);
+  }
+  .project-card > .header > div > a > img {
+    filter: invert(30%);
+  }
+  .btn-burger span {
+    background-color: var(--primary-light)
+  }
+  .project-card {
+    background-color: var(--card-trans-light);
+  }
+}
+
+.tloz {
+  background-image: url(./public/images/tloz_background.jpeg);
+  color: var(--primary-tloz);
+  .divider {
+    border-color: var(--highlight-tloz);
+  }
+  .content-color {
+    background-color: var(--highlight-tloz);
+  }
+  .my-btn {
+    background-color: var(--highlight-tloz);
+  }
+  .my-btn:hover {
+    box-shadow: inset 4rem 0 0 0 var(--highlight-light-tloz) 
+  }
+  .my-btn:hover img {
+    filter: invert(50%);
+  }
+  nav li a:hover {
+    color: var(--highlight-light-tloz);
+    border-bottom: 2px solid var(--highlight-light-tloz);
+  }
+  nav a:first-of-type:hover h4 {
+    color: var(--highlight-light-tloz);
+  }
+  p.title {
+    font-size: 1.5em;
+    background: var(--background-title-tloz);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+  }
+  #mail-btn span {
+    background: var(--background-title-tloz);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+  }
+  .project-card {
+    background-color: var(--card-trans-tloz);
+  }
+  .divider::after {
+    background: var(--background-title-tloz);
+  }
+}
+
+main {
+  min-height: 80vh;
+}
+
+a,
+p {
+  font-size: 1.1rem;
+}

@@ -1,0 +1,33 @@
+.home {
+    padding: 4rem 8rem;
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .home p:nth-child(3) {
+    padding: 3em 0;
+    line-height: 2em;
+  }
+
+  @media (max-width: 780px) {
+    .home {
+      padding: 2rem 5rem;
+    }
+  }
+  
+  @media (max-width: 395px) {
+    .home {
+      padding: 2rem 2.5rem;
+    }
+
+    .home p:nth-child(3) {
+      padding: 3em 0;
+      line-height: 2em;
+      font-size: 1em;
+    }
+  }
+  

@@ -1,0 +1,48 @@
+.profile-btn {
+    display: flex;
+    gap: 0.5em;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-btn h4 {
+    font-size: 0.9em;
+    text-align: center;
+    padding-left: 0.2em;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile-btn img {
+    width: 3.2em;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile-btn img:last-child  {
+    width: 2em;
+    height: auto;
+}
+
+.profile-btn:hover {
+    border: none;
+}
+
+@media (max-width: 780px) {
+    .profile-btn h4 {
+        max-width: 5em;
+    }
+    .profile-btn img {
+        width: 2.8em;
+    }
+}
+
+@media (max-width: 395px) {
+    .profile-btn img {
+        width: 2.8em;
+    }
+    .profile-btn h4 {
+        max-width: 5em;
+        font-size: 0.8em;
+    }
+}

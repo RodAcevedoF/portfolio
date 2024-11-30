@@ -1,0 +1,49 @@
+
+#mail-btn {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    text-align: center; 
+    transform: translateX(0);
+    transition: 0.25s ease-in-out;
+  }
+  
+#mail-btn:hover {
+    transform: translateX(3em);
+  }
+  
+#mail-btn img {
+    width: 100%;
+    height: auto;
+  }
+  
+#mail-btn span {
+    position: absolute;
+    display: flex;
+    opacity: 0; 
+    left: 1em;
+    background: var(--background-title);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    width: 100px;
+    height: 55px;
+    transform: translateX(-120%);
+    font-size: 1.2em; 
+    transition: 0.25s ease-in-out;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    align-items: center;
+  }
+  
+#mail-btn:hover span {
+    opacity: 1;
+  }
+
+@media (max-width: 780px) { 
+  #mail-btn:hover {
+    transform: translateX(5em);
+  }
+}

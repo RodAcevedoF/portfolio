@@ -1,0 +1,16 @@
+  .divider {
+    padding-top: 1em;
+    display: flex;
+    height: auto;  
+    justify-content: center;
+    width: 90%;
+    justify-self: center;
+  }
+  
+  .divider::after {
+    border-radius: 1em;
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: var(--background-title);
+  }

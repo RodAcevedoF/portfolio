@@ -1,0 +1,119 @@
+.content-color {
+    width: 100%;
+    height: auto;
+    max-height: 0; 
+    opacity: 0; 
+    overflow: hidden; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--highlight);
+    color: var(--primary-dark);
+    transition: max-height 0.5s ease, opacity 0.5s ease, background-color 0.5s ease; 
+}
+
+.content-color > p {
+    text-align: center;
+    font-weight: bolder;
+    padding: 0.25em 0 0.25em 0;
+}
+
+.content-color.drop {
+    max-height: 13vh; 
+    opacity: 1; 
+}
+.color-nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    top:0;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding-bottom: 1.5em;
+}
+
+.color-nav li {
+    width: 8em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary-dark);
+    border-radius: 1em;
+    overflow: hidden;
+    cursor: pointer;
+    padding-bottom: 0.25em;
+}
+
+.color-nav li:hover p{
+    transform: scale(1.2);
+}
+.color-nav p {
+    font-size: 0.8em;
+    padding-bottom: .25em;
+    font-weight: bold;
+    transition: all 0.25s ease-in-out;
+}
+
+.color-nav li div {
+    display: flex;
+    justify-content: center;
+    transition: all 0.25s ease-in-out;
+}
+.color-nav li div span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-dark);
+}
+.dark-li div span:first-child { 
+background-color: var(--bg-dark);
+}
+.dark-li div span:nth-child(2) {
+    background-color: var(--btn-color);
+}
+.dark-li div span:nth-child(3) {
+    background-color: var(--highlight);
+}
+
+.light-li div span:first-child { 
+    background-color: var(--bg-light);
+}
+
+.light-li div span:nth-child(2) {
+    background-color: var(--primary-light);
+}
+
+.light-li div span:nth-child(3) {
+    background-color: var(--highlight-light);
+}
+
+.tloz-li div span:first-child { 
+    background-color: var(--primary-tloz);
+}
+
+.tloz-li div span:nth-child(2) {
+    background-color: var(--highlight-light-tloz);
+}
+
+.tloz-li div span:nth-child(3) {
+    background-color: var(--highlight-tloz);
+}
+
+@media (max-width: 780px) {
+    .color-nav {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
+@media (max-width: 395px) {
+    .color-nav {
+        gap: 0.25em;
+    }
+    .color-nav li {
+        width: 6em;
+    }
+}
